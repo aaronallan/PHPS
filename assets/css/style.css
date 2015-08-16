@@ -1,0 +1,116 @@
+*, *:before, *:after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+{
+	float: left;
+	width: 100%;
+}
+
+.wrapper {
+	position: absolute;
+	width: 70%;
+	top: 50px;
+	bottom: 0;
+	left: 15%;
+	right: 15%;
+}
+
+header,
+section {
+	width: 100%;
+	float: left;
+}
+
+section {
+
+}
+
+.content {
+	position: absolute;
+    top: 0;
+    bottom: 54px;
+    width: 100%;
+    max-width: 960px;
+    margin: 100px 0 0;
+    border-top: none;
+    border-right: solid 1px #efefef;
+    border-bottom: solid 1px #efefef;
+    border-left: solid 1px #efefef;
+    overflow-y: scroll;
+}
+footer {
+	width: 100%;
+	max-width: 960px;
+    padding: 1em 0;
+    position: absolute;
+    background: #ddd;
+    bottom: 0;
+}
+div.left, 
+div.right {
+	float: left;
+	padding: .5em;
+}
+
+div.left span,
+div.right span {
+	display: block;
+}
+
+div.left {
+	width: 50%;
+	background: #e5e5e5;
+}
+
+div.right {
+	width: 50%;
+	background: #dddddd;
+}
+
+div.right span {
+	text-align: right;
+}
+
+nav {
+	float: left;
+	width: 100%;
+	margin: 3.1em 0 0;
+}
+
+nav ul {
+	margin: 0em;
+	width: 100%;
+	max-width: 960px;
+}
+nav ul li {
+	display: inline-block;
+	float: left;
+	width: 20%;
+	text-align: center;
+	border-bottom: solid 1px #efefef;
+	padding: 1em 0;
+}
+
+nav ul li a {
+	text-decoration: none;
+	color: #000;
+}
+
+nav ul li.active,
+nav ul li:focus {
+	border-top: solid 1px #efefef;
+    border-right: solid 1px #efefef;
+    border-bottom: none;
+    border-left: solid 1px #efefef;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+footer span {
+	display: block;
+	text-align: center;
+}
+
