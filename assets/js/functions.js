@@ -8,6 +8,14 @@
   });
 
   jQ('.hamburger').on('click', function () {
-    jQ('.mobile-menu').slideToggle();
+    jQ('.mobile-menu').slideToggle(300, function () {
+      if (jQ('.mobile-menu').is(':visible')) {
+        jQ('#content').addClass('mobile-menu-open');
+      } else {
+        jQ('#content').removeClass('mobile-menu-open');
+      }
+    });
+
+
   });
 })(jQuery) 

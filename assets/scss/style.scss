@@ -37,6 +37,9 @@ section {
   margin: 152px 0 0;
   border-top: none;
   overflow-y: scroll;
+  &.mobile-menu-open {
+    margin: 300px 0 0;
+  }
 }
 footer {
   width: 100%;
@@ -117,7 +120,7 @@ nav.mobile-menu {
       &:last-child {
         border-bottom: none;
       }
-      
+
       a {
         color: #000;
         text-decoration: none;

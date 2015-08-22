@@ -34,6 +34,8 @@ section {
       border-right: solid 1px #efefef;
       border-bottom: solid 1px #efefef;
       border-left: solid 1px #efefef; } }
+  #content.mobile-menu-open {
+    margin: 300px 0 0; }
 
 footer {
   width: 100%;
