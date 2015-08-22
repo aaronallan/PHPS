@@ -7,12 +7,13 @@
 }
 
 .wrapper {
-  position: absolute;
-  width: 70%;
-  top: 50px;
-  bottom: 0;
-  left: 15%;
-  right: 15%;
+  width: 100%;
+  @media (all and min-width: 640px) {
+    width: 70%;
+    max-width: 960px;
+  }
+  height: 100%;
+  margin: 0 auto;
 }
 
 header,
@@ -26,17 +27,23 @@ section {
   top: 0;
   bottom: 54px;
   width: 100%;
-  max-width: 960px;
-  margin: 100px 0 0;
+  @media (all and min-width: 640px) {
+    width: 70%;
+    max-width: 960px;
+    border-right: solid 1px #efefef;
+    border-bottom: solid 1px #efefef;
+    border-left: solid 1px #efefef;
+  }
+  margin: 152px 0 0;
   border-top: none;
-  border-right: solid 1px #efefef;
-  border-bottom: solid 1px #efefef;
-  border-left: solid 1px #efefef;
   overflow-y: scroll;
 }
 footer {
   width: 100%;
-  max-width: 960px;
+  @media (all and min-width: 640px) {
+    width: 70%;
+    max-width: 960px;
+  }
   padding: 1em 0;
   position: absolute;
   background: #ddd;
@@ -59,20 +66,70 @@ div.right {
 }
 
 div.left {
-  width: 50%;
+  width: 60%;
   background: #e5e5e5;
+  @media (all and min-width: 640px) {
+    width: 50%;
+  }
+
+  .hamburger {
+    width: 10%;
+    float: left;
+    height: 15px;
+    padding: 5px 0 15px;
+    margin-right: 10px;
+    @media (all and min-width: 640px) {
+      display: none;
+    }
+
+    span {
+      width: 100%;
+      padding: .15em 0;
+      margin: .2em 0;
+      background: #000;
+    }
+  }
 }
 
 div.right {
-  width: 50%;
+  width: 40%;
   background: #dddddd;
+  @media (all and min-width: 640px) {
+    width: 50%;
+  }
 
   span {
     text-align: right;
   }
 }
+nav.mobile-menu {
+  display: none;
 
-nav {
+  ul {
+    width: 100%;
+    li {
+      display: inline-block;
+      float: left;
+      width: 100%;
+      padding: 1em .5em;
+      border-bottom: solid 1px #efefef;
+
+      &:last-child {
+        border-bottom: none;
+      }
+      
+      a {
+        color: #000;
+        text-decoration: none;
+      }
+    }
+  }
+}
+nav.desktop-menu {
+  display: none;
+  @media (all and min-width: 640px) {
+    display: block;
+  }
   float: left;
   width: 100%;
   margin: 3.1em 0 0;

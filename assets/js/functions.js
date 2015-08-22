@@ -6,4 +6,8 @@
     jQ('#content').load('views/view.html #' + jQ(this).attr('value'));
     return false;
   });
+
+  jQ('.hamburger').on('click', function () {
+    jQ('.mobile-menu').slideToggle();
+  });
 })(jQuery) 
