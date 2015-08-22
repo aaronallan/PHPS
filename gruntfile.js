@@ -6,42 +6,18 @@ module.exports = function(grunt) {
 	 	
 	 	/* Get package meta data */
 		pkg: grunt.file.readJSON('package.json'),
-		project: {
-			app: '',
-			assets: '<%= project.app %>/assets',
-			src: '<%= project.assets %>/src',
-			css: [
-				'<%= project.src %>/assets/scss/style.scss'
-			],
-			js: [
-				'<%= project.src %>assets/js/*.js'
-			]
-		},
 		sass: {
-		  dev: {
-		    options: {
-		      style: 'expanded',
-		      compass: true
-		    },
-		    files: {
-		      '<%= project.assets %>/css/style.css': '<%= project.css %>'
-		    }
-		  },
-		  dist: {
-		    options: {
-		      style: 'compressed',
-		      compass: true
-		    },
-		    files: {
-		      '<%= project.assets %>/css/style.css': '<%= project.css %>'
-		    }
-		  }
+			dist: {
+				files: {
+					'assets/css/style.css' : 'assets/scss/style.scss'
+				}
+			}
 		},
 		watch: {
-		  sass: {
-		    files: '<%= project.src %>/scss/{,*/}*.{scss,sass}',
-		    tasks: ['sass:dev']
-		  }
+			css: {
+				files: '**/*.scss',
+				tasks: ['sass']
+			}
 		}
 	});
 
@@ -49,7 +25,7 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-watch');
 
 	grunt.registerTask('compile', [
-	  'sass:dev',
+	  'sass',
 	  'watch'
 	]);
 };
