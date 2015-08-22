@@ -6,7 +6,7 @@ $('li').on('click', function() {
   $(this).addClass('active');
   $('li').not(this).removeClass('active');
   console.log($(this).attr('value'));
-  $('#content').load('views/view.html#' + $(this).attr('value'));
+  $('#content').load('views/view.html #' + $(this).attr('value'));
   return false;
 });
 
