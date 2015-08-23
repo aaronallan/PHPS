@@ -41,7 +41,7 @@ section {
 }
 
 section {
-  height: calc(100% - 54px);
+  height: calc(100% - 60px);
   overflow: hidden;
   background: #fff;
 }
@@ -83,6 +83,11 @@ footer {
   span {
     display: block;
     text-align: center;
+    font-size: 1.2em;
+  }
+  span:last-child {
+    color: #fff;
+    letter-spacing: 1.3;
   }
 }
 
