@@ -40,13 +40,13 @@ section {
   width: 100%;
   height: calc(100% - 60px);
   background: #ffffff;
-  border: solid 1px #ccc;
   padding: 2em .5em;
-  border-top: none;
   overflow-y: scroll; }
   @media (min-width: 640px) {
     #content {
-      max-width: 600px; } }
+      max-width: 600px;
+      border: solid 1px #ccc;
+      border-top: none; } }
   #content img, #content p {
     display: block;
     margin: 1em auto;
@@ -60,7 +60,7 @@ section {
 footer {
   width: 100%;
   padding: .5em 0;
-  position: absolute;
+  position: fixed;
   background: #4b938f;
   bottom: 0; }
   @media (min-width: 640px) {
@@ -80,7 +80,15 @@ footer {
   float: left;
   padding: .5em;
   color: #fff;
-  font-size: 1.2em; }
+  font-size: .8em; }
+  @media (min-width: 400px) {
+    .header-left,
+    .header-right {
+      font-size: 1em; } }
+  @media (min-width: 640px) {
+    .header-left,
+    .header-right {
+      font-size: 1.2em; } }
   .header-left span,
   .header-right span {
     display: block; }
@@ -88,18 +96,26 @@ footer {
 .hamburger {
   width: 10%;
   float: left;
-  height: 57px;
-  padding: 17px 0;
+  height: 39px;
+  padding: 5px 0;
   background: #4b938f; }
+  @media (min-width: 400px) {
+    .hamburger {
+      height: 48px;
+      padding: 10px 0; } }
   @media (min-width: 640px) {
     .hamburger {
       display: none; } }
   .hamburger span {
     display: block;
     width: 60%;
-    padding: .15em 0;
-    margin: .2em auto;
+    padding: .1em 0;
+    margin: .3em auto;
     background: #514f4f; }
+    @media (min-width: 640px) {
+      .hamburger span {
+        padding: .15em 0;
+        margin: .2em auto; } }
 
 .header-left {
   width: 50%;
