@@ -57,18 +57,13 @@ section {
     border-top: none;
 
     &:before {
-      content: '';
-      width: 60%;
-      padding: .5em 0em;
-      background: #fff;
-      display: block;
-      position: fixed;
+      width: 100%;
     }
   }
   
   &:before {
     content: '';
-    width: 100%;
+    width: 60%;
     padding: .5em 0em;
     background: #fff;
     display: block;
