@@ -11,6 +11,10 @@
     jQ('#content').load('views/view.html #' + jQ(this).attr('value'));
   });
 
+  var fakeLink = function (destination) {
+    jQ('#content').load('views/view.html #' + destination);
+  };
+
   //Toggle Mobile Menu
   jQ('.hamburger, .mobile-menu ul li').on('click', function () {
     jQ('.mobile-menu').slideToggle();
