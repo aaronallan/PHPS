@@ -50,12 +50,12 @@ section {
   height: calc(100% - 60px); 
   background: #ffffff;
   overflow-y: scroll;
-  padding-bottom: 4em;
+  padding: 0 0 2em;
   
   @media (all and min-width: 640px) {
     max-width: 600px;
     border: solid 1px #ccc;
-    padding: 2em;
+    padding: 2em 2em 4em;
     border-top: none;
   }
 
