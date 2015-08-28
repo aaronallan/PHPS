@@ -40,13 +40,12 @@ section {
   width: 100%;
   height: calc(100% - 60px);
   background: #ffffff;
-  overflow-y: scroll;
-  padding: 0 0 2em; }
+  overflow-y: scroll; }
   @media (min-width: 640px) {
     #content {
       max-width: 600px;
       border: solid 1px #ccc;
-      padding: 2em 2em 4em;
+      padding: 2em;
       border-top: none; } }
   #content img, #content p, #content ul {
     display: block;
@@ -75,6 +74,13 @@ section {
     text-align: center; }
     #content li:last-child {
       margin-right: 0; }
+
+#index,
+#visit,
+#donations,
+#ceremonies,
+#about {
+  margin-bottom: 55px; }
 
 footer {
   width: 100%;
