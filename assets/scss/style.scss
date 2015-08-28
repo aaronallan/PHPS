@@ -55,11 +55,20 @@ section {
     border: solid 1px #ccc;
     padding: 0 2em 2em;
     border-top: none;
+
+    &:before {
+      content: '';
+      width: 60%;
+      padding: .5em 0em;
+      background: #fff;
+      display: block;
+      position: fixed;
+    }
   }
   
   &:before {
     content: '';
-    width: 60%;
+    width: 100%;
     padding: .5em 0em;
     background: #fff;
     display: block;
