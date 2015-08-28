@@ -45,8 +45,15 @@ section {
     #content {
       max-width: 600px;
       border: solid 1px #ccc;
-      padding: 2em;
+      padding: 0 2em 2em;
       border-top: none; } }
+  #content:before {
+    content: '';
+    width: 60%;
+    padding: .5em 0em;
+    background: #fff;
+    display: block;
+    position: fixed; }
   #content img, #content p, #content ul {
     display: block;
     margin: 1em auto;

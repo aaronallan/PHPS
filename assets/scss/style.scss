@@ -53,10 +53,18 @@ section {
   @media (all and min-width: 640px) {
     max-width: 600px;
     border: solid 1px #ccc;
-    padding: 2em;
+    padding: 0 2em 2em;
     border-top: none;
   }
-
+  
+  &:before {
+    content: '';
+    width: 60%;
+    padding: .5em 0em;
+    background: #fff;
+    display: block;
+    position: fixed;
+  }
 
   img, p, ul {
     display: block;
