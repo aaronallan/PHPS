@@ -40,21 +40,30 @@ section {
   width: 100%;
   height: calc(100% - 60px);
   background: #ffffff;
-  padding: 2em;
   overflow-y: scroll; }
   @media (min-width: 640px) {
     #content {
       max-width: 600px;
       border: solid 1px #ccc;
+      padding: 2em;
       border-top: none; } }
   #content img, #content p, #content ul {
     display: block;
     margin: 1em auto;
-    max-width: 80%; }
+    width: 96%;
+    max-width: 96%; }
+    @media (min-width: 640px) {
+      #content img, #content p, #content ul {
+        max-width: 75%; } }
   #content p {
     text-align: justify;
     font-size: 1em;
     line-height: 1.3em; }
+  #content a {
+    color: #4b938f;
+    text-decoration: none; }
+    #content a:hover {
+      text-decoration: underline; }
   #content li {
     list-style: none;
     float: left;
