@@ -10,8 +10,11 @@
     jQ('.menu-item').not(this).removeClass('active');
     jQ('#content').load('views/view.html #' + jQ(this).attr('value'));
   });
+  
+  var ceremonies = 'ceremonies';
 
-  var fakeLink = function (destination) {
+  function fakeLink(destination) {
+    console.log(destination);
     jQ('#content').load('views/view.html #' + destination);
   };
 
