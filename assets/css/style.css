@@ -40,22 +40,31 @@ section {
   width: 100%;
   height: calc(100% - 60px);
   background: #ffffff;
-  padding: 2em .5em;
+  padding: 2em;
   overflow-y: scroll; }
   @media (min-width: 640px) {
     #content {
       max-width: 600px;
       border: solid 1px #ccc;
       border-top: none; } }
-  #content img, #content p {
+  #content img, #content p, #content ul {
     display: block;
     margin: 1em auto;
     max-width: 80%; }
   #content p {
-    padding: 0 3em;
-    text-align: center;
+    text-align: justify;
     font-size: 1em;
     line-height: 1.3em; }
+  #content li {
+    list-style: none;
+    float: left;
+    display: inline-block;
+    width: 32%;
+    margin-right: 2%;
+    margin-bottom: 1em;
+    text-align: center; }
+    #content li:last-child {
+      margin-right: 0; }
 
 footer {
   width: 100%;

@@ -49,45 +49,60 @@ section {
   width: 100%;
   height: calc(100% - 60px); 
   background: #ffffff;
+  padding: 2em;
+  overflow-y: scroll;
   
   @media (all and min-width: 640px) {
     max-width: 600px;
     border: solid 1px #ccc;
     border-top: none;
   }
-  padding: 2em .5em;
-  
-  overflow-y: scroll;
 
-  img, p {
+
+  img, p, ul {
     display: block;
     margin: 1em auto;
     max-width: 80%;
   }
 
   p {
-    padding: 0 3em;
-    text-align: center;
+    text-align: justify;
     font-size: 1em;
     line-height: 1.3em;
   }
+
+  li {
+    list-style: none;
+    float: left;
+    display: inline-block;
+    width: 32%;
+    margin-right: 2%;
+    margin-bottom: 1em; 
+    text-align: center;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
 }
+
 footer {
   width: 100%;
-  @media (all and min-width: 640px) {
-    width: 70%;
-    max-width: 600px;
-  }
   padding: .5em 0;
   position: fixed;
   background: #4b938f;
   bottom: 0;
+  @media (all and min-width: 640px) {
+    width: 70%;
+    max-width: 600px;
+  }
 
   span {
     display: block;
     text-align: center;
     font-size: 1.2em;
   }
+  
   span:last-child {
     color: #fff;
     letter-spacing: 1.3;
