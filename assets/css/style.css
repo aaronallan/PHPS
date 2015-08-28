@@ -41,6 +41,13 @@ section {
   height: calc(100% - 60px);
   background: #ffffff;
   overflow-y: scroll; }
+  #content:before {
+    content: '';
+    width: 100%;
+    padding: .5em 0em;
+    background: #fff;
+    display: block;
+    position: fixed; }
   @media (min-width: 640px) {
     #content {
       max-width: 600px;
@@ -48,14 +55,8 @@ section {
       padding: 0 2em 2em;
       border-top: none; }
       #content:before {
-        width: 100%; } }
-  #content:before {
-    content: '';
-    width: 60%;
-    padding: .5em 0em;
-    background: #fff;
-    display: block;
-    position: fixed; }
+        width: 60%;
+        max-width: 530px; } }
   #content img, #content p, #content ul {
     display: block;
     margin: 1em auto;
