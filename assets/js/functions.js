@@ -11,11 +11,10 @@
     jQ('#content').load('views/view.html #' + jQ(this).attr('value'));
   });
   
-  var ceremonies = 'ceremonies';
 
-  function fakeLink(destination) {
-    console.log(destination);
-    jQ('#content').load('views/view.html #' + destination);
+  jQ('#weddingLink').on('click', function() {
+    console.log('clicked');
+    jQ('#content').load('views/view.html #ceremonies');
   };
 
   //Toggle Mobile Menu
