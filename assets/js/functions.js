@@ -15,7 +15,7 @@
   jQ('#weddingLink').on('click', function() {
     console.log('clicked');
     jQ('#content').load('views/view.html #ceremonies');
-  };
+  });
 
   //Toggle Mobile Menu
   jQ('.hamburger, .mobile-menu ul li').on('click', function () {
