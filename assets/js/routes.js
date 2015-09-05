@@ -1,4 +1,9 @@
+console.log('available');
 
-page('/index.html', function(){
-  console.log('test')
+page('/', function(){
+  console.log('index')
+});
+
+page('/#ceremonies', function () {
+  console.log('ceremonies');
 });
