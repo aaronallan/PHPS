@@ -1,5 +1,4 @@
-var page = require('page');
 
-page('/', function(){
+page('/index.html', function(){
   console.log('test')
 });
