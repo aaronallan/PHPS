@@ -1,4 +1,17 @@
-// (function($) {
+(function($) {
+  //Routes
+  page('/', index);
+  page('/about', about);
+  page();
+
+  function index () {
+    console.log('index');
+  }
+
+  function about () {
+    console.log('about');
+  }
+  
   //On Ready, load home view
   $(document).on('ready', function (){
     $('#content').load('views/view.html #index');
@@ -21,4 +34,4 @@
   $('.hamburger, .mobile-menu ul li').on('click', function () {
     $('.mobile-menu').slideToggle();
   });
-// })(jQuery) 
+})(jQuery) 
