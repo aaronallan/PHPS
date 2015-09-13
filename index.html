@@ -3,8 +3,6 @@
 	<link rel="stylesheet" type="text/css" href="/assets/css/style.css">
 	<title></title>
   <script src="node_modules/jquery/dist/jquery.min.js"></script>
-  <script src="/page.js"></script>
-  <base href="/app/">
 </head>
 <body>
 	<header>
@@ -53,26 +51,6 @@
 	  	<span>MAY YOU EVER BE BLESSED</span>
 	  </footer>
   </div>
-  <script>
-    page.base('/app');
 
-    page('/', index);
-    page('/about', about);
-    page('/contact', contact);
-    page('/contact/:contactName', contact);
-    page();
-
-    function index() {
-     document.getElementById('content').innerHTML = '<h1>viewing contact</h1>';
-    }
-
-    function about() {
-      document.getElementById('content').innerHTML = '<h1>viewing about</h1>';
-    }
-
-    function contact(ctx) {
-      document.getElementById('content').innerHTML = '<h1>viewing contact</h1>';
-    }
-  </script>
 </body>
 </html>
