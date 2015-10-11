@@ -56,23 +56,30 @@ section {
       .content:before {
         width: 69.5%;
         max-width: 598px; } }
-  .content img, .content p, .content ul, .content h2 {
+  .content p, .content ul, .content h2 {
     display: block;
     margin: 1em auto;
     width: 96%;
     max-width: 96%; }
     @media (min-width: 640px) {
-      .content img, .content p, .content ul, .content h2 {
-        max-width: 80%; } }
+      .content p, .content ul, .content h2 {
+        max-width: 70%; } }
   .content img {
-    margin: 2em auto 1.5em; }
+    display: block;
+    border-radius: 10px;
+    margin: 2em auto 1.5em;
+    width: 96%;
+    max-width: 96%; }
+    @media (min-width: 640px) {
+      .content img {
+        max-width: 70%; } }
   .content p {
     text-align: justify;
     font-size: 1.05em;
     line-height: 1.4em; }
   .content h2 {
-    font-size: 1.5em;
-    line-height: 1.8em;
+    font-size: 1.3em;
+    line-height: 1.6em;
     color: #4b938f; }
   .content a {
     color: #4b938f;

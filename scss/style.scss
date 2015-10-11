@@ -70,18 +70,25 @@ section {
     }
   }
 
-  img, p, ul, h2 {
+  p, ul, h2 {
     display: block;
     margin: 1em auto;
     width: 96%;
     max-width: 96%;
     @media (all and min-width: 640px) {
-      max-width: 80%;
+      max-width: 70%;
     }
   }
 
   img {
+    display: block;
+    border-radius: 10px;
     margin: 2em auto 1.5em;
+    width: 96%;
+    max-width: 96%;
+    @media (all and min-width: 640px) {
+      max-width: 70%;
+    }
   }
 
   p {
@@ -91,8 +98,8 @@ section {
   }
 
   h2 {
-    font-size: 1.5em;
-    line-height: 1.8em;
+    font-size: 1.3em;
+    line-height: 1.6em;
     color: #4b938f;
   }
 
