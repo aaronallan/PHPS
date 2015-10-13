@@ -98,9 +98,11 @@ section {
   }
 
   h2 {
-    font-size: 1.3em;
-    line-height: 1.6em;
     color: #4b938f;
+    font-size: 1.2em;
+    line-height: 1.5em;
+    margin-top: 1em;
+    text-decoration: underline;
   }
 
   a {
@@ -159,6 +161,7 @@ footer {
 
 .header-left, 
 .header-right {
+  display: block;
   float: left;
   padding: .5em;
   color: #fff;
@@ -307,3 +310,78 @@ nav.desktop-menu {
     margin: 1em auto;
   }
 }
+
+.icon {
+  position: absolute;
+  bottom: 1em;
+  right: 1em;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.modal {
+  display: none;
+
+  .close {
+    position: absolute;
+    right: 1em;
+    bottom: 1em;
+    color: #fff;
+  }
+
+  .wrapper {
+    width: 96%;
+    @media (all and min-width: 640px) { 
+      width: 50%;
+    }
+    max-width: 400px;
+    margin: 2em auto;
+
+    img {
+      width: 100%;
+    }
+
+    a {
+      text-decoration: none;
+      color: #514f4f;
+      
+      span {
+        font-size: 1em;
+        text-align: left;
+        padding: 0;
+      }
+
+      &:hover {
+        text-decoration: none;
+      }
+      &:visited {
+        color: #514f4f;
+        text-decoration: none;
+      }
+    }
+
+    h2 {
+      color: #4b938f;
+      font-size: 1.2em;
+      line-height: 1.5em;
+      margin-top: 1em;
+      text-decoration: underline;
+    }
+
+  }
+
+}
+
+.show {
+  display: block;
+  position: absolute;
+  top: 57px;
+  left: 0; 
+  bottom: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, .98);
+  overflow: hidden;
+}
+
+
