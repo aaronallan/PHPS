@@ -12,5 +12,12 @@
       $('.modal').removeClass('show');
       $('.icon').show();
     });
+
+    $('.visit-link').on('mouseover', function () {
+      $('.icon').addClass('icon-bounce');
+    });
+    $('.visit-link').on('mouseout', function () {
+      $('.icon').removeClass('icon-bounce');
+    });
   });
 })(jQuery);

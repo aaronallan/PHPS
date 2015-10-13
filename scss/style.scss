@@ -227,7 +227,6 @@ nav.mobile-menu {
       display: inline-block;
       float: left;
       width: 100%;
-      padding: 1em .5em;
       border-bottom: solid 1px #efefef;
 
       &:last-child {
@@ -235,7 +234,9 @@ nav.mobile-menu {
       }
 
       a {
+        display:block;
         color: #514f4f;
+        padding: 1em .5em;
         text-decoration: none;
       }
     }
@@ -263,7 +264,7 @@ nav.desktop-menu {
       width: 20%;
       text-align: center;
       border-bottom: solid 1px #efefef;
-      padding: 1em 0;
+      
       
 
       &.active,
@@ -279,18 +280,24 @@ nav.desktop-menu {
         border-top-left-radius: 10px;
         a {
           color: #514f4f;
-          border-bottom: solid 2px;
-          padding: .2em 0;
+          text-decoration: underline;
         }
       }
 
       a {
+        display: block;
+        padding: 1em 0;
         color: #4b938f;
         text-decoration: none;
         text-transform: uppercase;
         font-size: .85em;
         font-family: 'ProximaNova-Regular';
+
+        &:hover {
+          text-decoration: underline;
+        }
       }
+
     }
   }
 }
@@ -382,6 +389,22 @@ nav.desktop-menu {
   right: 0;
   background-color: rgba(255, 255, 255, .98);
   overflow: hidden;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+.icon-bounce {
+   animation: bounce 2s infinite;
 }
 
 
