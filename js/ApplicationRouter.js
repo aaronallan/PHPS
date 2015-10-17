@@ -2,8 +2,7 @@ var ApplicationRouter = Backbone.Router.extend({
 
 	initialize: function(el) {
 		this.el = el;
-		console.log(this.el);
-
+		
 		this.homeView = new ContentPaneView({template: '#home'});
 		this.ceremoniesView = new ContentPaneView({template: '#ceremonies'});
 		this.visitView = new ContentPaneView({template: '#visit'});
@@ -38,39 +37,33 @@ var ApplicationRouter = Backbone.Router.extend({
 		this.currentView = view;
 	},
 
-	/*
-	 * Change the active element in the topbar
-	 */
-	setActiveEntry: function(url) {
-		// Unmark all entries
+	//Set Active Tab in index.html
+	setActiveTab: function(url) {
 		$('li').removeClass('active');
-
-		// Mark active entry
 		$("li a[href='" + url + "']").parents('li').addClass('active');
 	},
 
 	home: function() {
 		this.switchView(this.homeView);
-		this.setActiveEntry('#home');
+		this.setActiveTab('#home');
 	},
 	ceremonies: function() {
 		this.switchView(this.ceremoniesView);
-		this.setActiveEntry('#ceremonies');
+		this.setActiveTab('#ceremonies');
 	},
 	visit: function() {
 		this.switchView(this.visitView);
-		this.setActiveEntry('#visit');
+		this.setActiveTab('#visit');
 	},
 	donations: function() {
 		this.switchView(this.donationsView);
-		this.setActiveEntry('#donations');
+		this.setActiveTab('#donations');
 	},
 
 	about: function() {
 		this.switchView(this.aboutView);
-		this.setActiveEntry('#about');
+		this.setActiveTab('#about');
 	},
-
 
 	notFound: function() {
 		this.switchView(this.notFoundView);
