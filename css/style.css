@@ -128,20 +128,19 @@ footer {
 .header-right {
   display: block;
   float: left;
-  padding: .5em;
-  color: #fff;
-  font-size: .8em; }
-  @media (min-width: 400px) {
-    .header-left,
-    .header-right {
-      font-size: 1em; } }
-  @media (min-width: 640px) {
-    .header-left,
-    .header-right {
-      font-size: 1.2em; } }
-  .header-left span,
-  .header-right span {
-    display: block; }
+  padding: .5em; }
+  .header-left h1,
+  .header-right h1 {
+    color: #fff;
+    font-size: .8em; }
+    @media (min-width: 400px) {
+      .header-left h1,
+      .header-right h1 {
+        font-size: 1em; } }
+    @media (min-width: 640px) {
+      .header-left h1,
+      .header-right h1 {
+        font-size: 1.2em; } }
 
 .hamburger {
   width: 10%;
@@ -177,7 +176,7 @@ footer {
   @media (min-width: 640px) {
     .header-right {
       width: 50%; } }
-  .header-right span {
+  .header-right h1 {
     text-align: right; }
 
 nav.mobile-menu {
@@ -254,10 +253,10 @@ nav.desktop-menu {
 
 .icon {
   position: absolute;
-  bottom: 1em;
-  right: 1em;
-  width: 30px;
-  height: 30px;
+  bottom: .5em;
+  right: .5em;
+  width: 2.5em;
+  height: 2.5em;
   border-radius: 50%; }
 
 .modal {
