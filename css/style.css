@@ -74,9 +74,9 @@ section {
       .content img {
         max-width: 70%; } }
   .content p {
-    text-align: justify;
-    font-size: 1.05em;
-    line-height: 1.4em; }
+    text-align: left;
+    font-size: 1em;
+    line-height: 1.6em; }
   .content h2 {
     color: #4b938f;
     font-size: 1.2em;
