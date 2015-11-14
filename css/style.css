@@ -241,11 +241,7 @@ nav.desktop-menu {
           text-decoration: underline; }
 
 .directions span {
-  display: block;
-  text-align: center;
-  padding: 0 20%;
-  font-size: 1.2em;
-  line-height: 1.4em; }
+  display: block; }
 .directions .map {
   border-radius: 10px;
   width: 60%;
@@ -258,6 +254,14 @@ nav.desktop-menu {
   width: 2.5em;
   height: 2.5em;
   border-radius: 50%; }
+
+.address {
+  border-left: solid 5px #4b938f;
+  padding: 10px 20px;
+  background: #fafafa; }
+  .address span {
+    display: block;
+    color: #4b938f; }
 
 .modal {
   display: none; }
@@ -275,6 +279,8 @@ nav.desktop-menu {
         width: 50%; } }
     .modal .wrapper img {
       width: 100%; }
+    .modal .wrapper p {
+      line-height: 1.6em; }
     .modal .wrapper a {
       text-decoration: none;
       color: #514f4f; }
@@ -291,7 +297,7 @@ nav.desktop-menu {
       color: #4b938f;
       font-size: 1.2em;
       line-height: 1.5em;
-      margin-top: 1em;
+      margin: 1em 0;
       text-decoration: underline; }
 
 .show {
