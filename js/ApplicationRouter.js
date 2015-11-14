@@ -2,7 +2,8 @@ var ApplicationRouter = Backbone.Router.extend({
 
 	initialize: function(el) {
 		this.el = el;
-		
+
+
 		this.homeView = new ContentPaneView({template: '#home'});
 		this.ceremoniesView = new ContentPaneView({template: '#ceremonies'});
 		this.visitView = new ContentPaneView({template: '#visit'});

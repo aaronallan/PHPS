@@ -1,21 +1,33 @@
 (function($) {
   $(document).on('ready', function (){
-    
+
     // Hide / Show movile menu
     $('.hamburger, .mobile-menu ul li').on('click', function () {
       $('.mobile-menu').slideToggle();
     });
 
-    // Show Full Page Modal
+    // Show Info Modal
     $('.icon').on('click', function () {
       $('.modal').addClass('show');
       $(this).hide();
     });
 
-    //Hide Full Page Modal
+    //Hide Info Modal
     $('.close').on('click', function () {
       $('.modal').removeClass('show');
       $('.icon').show();
+      $('.icon').focus();
+    });
+
+    // Show History Modal
+    $('.continue').on('click', function () {
+      console.log('clicked');
+      $('.history-modal').addClass('show');
+    });
+
+    //Hide History Modal
+    $('.history-wrapper').on('click', function () {
+      $('.history-modal').removeClass('show');
     });
 
     // Handle Jumping Icon
@@ -24,5 +36,15 @@
     }).on('mouseout', function () {
       $('.icon').removeClass('icon-bounce');
     });
-  });
+
+    $(document).keyup(function(e) {
+        if (e.keyCode == 27 && $('.history-modal').hasClass('show')) {
+         $('.history-modal').removeClass('show');
+        }
+        if (e.keyCode == 27 && $('.modal').hasClass('show')) {
+         $('.modal').removeClass('show');
+        }
+      });
+    });
+
 })(jQuery);

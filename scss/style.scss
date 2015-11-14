@@ -47,15 +47,17 @@ section {
   width: 100%;
   height: calc(100% - 60px);
   background: #ffffff;
-  overflow-y: scroll;
+  overflow: hidden;
+  position: relative;
 
-  &:before {
-    content: '';
-    width: 100%;
-    padding: .5em 0em;
-    background: #fff;
-    display: block;
-    position: fixed;
+  .scrollable-content {
+    position: absolute;
+    top: 1.5em;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding-bottom: 4em;
+    overflow: scroll;
   }
 
   @media (all and min-width: 640px) {
@@ -83,7 +85,7 @@ section {
   img {
     display: block;
     border-radius: 10px;
-    margin: 2em auto 1.5em;
+    margin: 1em auto 1.5em;
     width: 96%;
     max-width: 96%;
     @media (all and min-width: 640px) {
@@ -384,7 +386,7 @@ nav.desktop-menu {
       color: #4b938f;
       font-size: 1.2em;
       line-height: 1.5em;
-      margin: 1em 0;
+      margin: .5em 0;
       text-decoration: underline;
     }
 
@@ -395,13 +397,102 @@ nav.desktop-menu {
 .show {
   display: block;
   position: absolute;
-  top: 57px;
+  top: 54px;
   left: 0;
   bottom: 0;
   right: 0;
   background-color: rgba(255, 255, 255, .98);
   overflow: hidden;
 }
+
+.continue {
+  color: #4b938f;
+  cursor: pointer;
+}
+
+.history-modal {
+  display: none;
+
+  h2 {
+    color: #4b938f;
+    margin-bottom: .5em;
+    display: inline-block;
+
+    &.history-close {
+      float: right;
+      color: #4b938f;
+      cursor: pointer;
+    }
+  }
+
+  hr {
+    border: none;
+    height: 1px;
+    background: #ccc;
+    margin-bottom: 1.5em;
+
+  }
+  p {
+    margin: .75em .5em;
+    line-height: 1.6em;
+    font-weight: 400;
+  }
+
+  blockquote {
+    border-left: solid 5px #4b938f;
+    padding-left: 10px;
+    margin: .75em 3em .75em 1em;
+    line-height: 1.6em;
+    font-weight: 400;
+    color: #222;
+    text-align: justify;
+  }
+
+  &.show {
+    display: block;
+    background-color: rgba(0, 0, 0, .7);
+
+  }
+
+  .history-wrapper {
+    position: relative;
+    width: 100%;
+    @media (all and min-width: 640px) {
+      width: 70%;
+    }
+    margin: 2.25em auto;
+    padding: 1em;
+    background: #fff;
+    height: 100%;
+
+    &:before {
+      content: 'Close';
+      color: #4b938f;
+      font-size: 1.2em;
+      text-align: center;
+      padding: .5em 0;
+      position: absolute;
+      right: 0;
+      top: -20px;
+      width: 80px;
+      height: 20px;
+      background: #fff;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+    }
+
+    .scrollable-history {
+      position: absolute;
+      left: 1em;
+      right: 1em;
+      top: 2em;
+      bottom: 1em;
+      overflow: scroll;
+    }
+  }
+}
+
+
 
 @-webkit-keyframes bounce {
   0%, 20%, 50%, 80%, 100% {

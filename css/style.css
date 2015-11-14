@@ -39,14 +39,16 @@ section {
   width: 100%;
   height: calc(100% - 60px);
   background: #ffffff;
-  overflow-y: scroll; }
-  .content:before {
-    content: '';
-    width: 100%;
-    padding: .5em 0em;
-    background: #fff;
-    display: block;
-    position: fixed; }
+  overflow: hidden;
+  position: relative; }
+  .content .scrollable-content {
+    position: absolute;
+    top: 1.5em;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding-bottom: 4em;
+    overflow: scroll; }
   @media (min-width: 640px) {
     .content {
       max-width: 600px;
@@ -67,7 +69,7 @@ section {
   .content img {
     display: block;
     border-radius: 10px;
-    margin: 2em auto 1.5em;
+    margin: 1em auto 1.5em;
     width: 96%;
     max-width: 96%; }
     @media (min-width: 640px) {
@@ -299,18 +301,84 @@ nav.desktop-menu {
       color: #4b938f;
       font-size: 1.2em;
       line-height: 1.5em;
-      margin: 1em 0;
+      margin: .5em 0;
       text-decoration: underline; }
 
 .show {
   display: block;
   position: absolute;
-  top: 57px;
+  top: 54px;
   left: 0;
   bottom: 0;
   right: 0;
   background-color: rgba(255, 255, 255, 0.98);
   overflow: hidden; }
+
+.continue {
+  color: #4b938f;
+  cursor: pointer; }
+
+.history-modal {
+  display: none; }
+  .history-modal h2 {
+    color: #4b938f;
+    margin-bottom: .5em;
+    display: inline-block; }
+    .history-modal h2.history-close {
+      float: right;
+      color: #4b938f;
+      cursor: pointer; }
+  .history-modal hr {
+    border: none;
+    height: 1px;
+    background: #ccc;
+    margin-bottom: 1.5em; }
+  .history-modal p {
+    margin: .75em .5em;
+    line-height: 1.6em;
+    font-weight: 400; }
+  .history-modal blockquote {
+    border-left: solid 5px #4b938f;
+    padding-left: 10px;
+    margin: .75em 3em .75em 1em;
+    line-height: 1.6em;
+    font-weight: 400;
+    color: #222;
+    text-align: justify; }
+  .history-modal.show {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.7); }
+  .history-modal .history-wrapper {
+    position: relative;
+    width: 100%;
+    margin: 2.25em auto;
+    padding: 1em;
+    background: #fff;
+    height: 100%; }
+    @media (min-width: 640px) {
+      .history-modal .history-wrapper {
+        width: 70%; } }
+    .history-modal .history-wrapper:before {
+      content: 'Close';
+      color: #4b938f;
+      font-size: 1.2em;
+      text-align: center;
+      padding: .5em 0;
+      position: absolute;
+      right: 0;
+      top: -20px;
+      width: 80px;
+      height: 20px;
+      background: #fff;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px; }
+    .history-modal .history-wrapper .scrollable-history {
+      position: absolute;
+      left: 1em;
+      right: 1em;
+      top: 2em;
+      bottom: 1em;
+      overflow: scroll; }
 
 @-webkit-keyframes bounce {
   0%, 20%, 50%, 80%, 100% {
