@@ -75,6 +75,9 @@ section {
     @media (min-width: 640px) {
       .content img {
         max-width: 70%; } }
+    @media (min-width: 640px) {
+      .content img.image-max {
+        max-height: 275px; } }
   .content p {
     text-align: left;
     font-size: 1em;
@@ -250,12 +253,16 @@ nav.desktop-menu {
   margin: 1em auto; }
 
 .icon {
+  display: none;
   position: absolute;
   bottom: .5em;
   right: .5em;
   width: 2.5em;
   height: 2.5em;
   border-radius: 50%; }
+  @media (min-width: 640px) {
+    .icon {
+      display: block; } }
 
 .address {
   border-left: solid 5px #4b938f;
@@ -314,7 +321,7 @@ nav.desktop-menu {
   background-color: rgba(255, 255, 255, 0.98);
   overflow: hidden; }
 
-.continue {
+.continue-reading {
   color: #4b938f;
   cursor: pointer; }
 

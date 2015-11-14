@@ -20,9 +20,20 @@
     });
 
     // Show History Modal
-    $('.continue').on('click', function () {
-      console.log('clicked');
+    $('.continue-reading').on('click', function () {
       $('.history-modal').addClass('show');
+    });
+
+    // On Window Change begin listening for click
+    $(window).bind( 'hashchange', function(e) {
+      var anchor = document.location.hash;
+      if( anchor === '#about' ) {
+        // Show History Modal
+        $('.continue-reading').on('click', function () {
+          console.log('clicked');
+          $('.history-modal').addClass('show');
+        });
+      }
     });
 
     //Hide History Modal

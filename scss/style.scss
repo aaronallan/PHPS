@@ -91,6 +91,12 @@ section {
     @media (all and min-width: 640px) {
       max-width: 70%;
     }
+
+    &.image-max {
+      @media (all and min-width: 640px) {
+        max-height: 275px;
+      }
+    }
   }
 
   p {
@@ -316,6 +322,10 @@ nav.desktop-menu {
 }
 
 .icon {
+  display: none;
+  @media (all and min-width: 640px) {
+    display: block;
+  }
   position: absolute;
   bottom: .5em;
   right: .5em;
@@ -405,7 +415,7 @@ nav.desktop-menu {
   overflow: hidden;
 }
 
-.continue {
+.continue-reading {
   color: #4b938f;
   cursor: pointer;
 }
