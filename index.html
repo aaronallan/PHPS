@@ -4,15 +4,6 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
 
   <link rel="stylesheet" type="text/css" href="css/style.css">
-
-  <script src="node_modules/jquery/dist/jquery.min.js"></script>
-  <script src="node_modules/underscore/underscore-min.js"></script>
-  <script src="node_modules/backbone/backbone-min.js"></script>
-
-  <script type="text/javascript" src="js/Backbone.View.js"></script>
-  <script type="text/javascript" src="js/ContentPaneView.js"></script>
-  <script type="text/javascript" src="js/ApplicationRouter.js"></script>
-  <script type="text/javascript" src="js/functions.js"></script>
   <title>Palapala Ho'omau, Congretional Church</title>
 </head>
 <body>
@@ -57,7 +48,6 @@
       </div>
       <!-- End of: Content -->
 	  </section>
-    <div class="continue-reading" style="float:right;">read</div>
     <div class="icon" tabindex="0">
       <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="40px" height="40px" viewBox="0 0 500 500" style="fill: #4b938f;" xml:space="preserve">
         <g>
@@ -136,130 +126,15 @@
       </div>
     </div>
   </div>
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="node_modules/underscore/underscore-min.js"></script>
+  <script src="node_modules/backbone/backbone-min.js"></script>
 
-  <script id="home" type="text/html">
-    <img tabindex="0" src="img/front-of-church-cropped.jpg" alt="Front Of Church">
-    <p tabindex="0">
-      Built by Congregational missionaries from Lahaina, Palapala Ho‘omau Church is a place of worship and celebration for residents and visitors alike. Its grounds offer eternal rest to the families of the community.
-    </p>
-    <footer>
-      <span tabindex="0">E PILI MAU NA POMAIKA‘I IA ‘OE</span>
-      <span tabindex="0">MAY YOU EVER BE BLESSED</span>
-    </footer>
-  </script>
-
-  <script id="ceremonies" type="text/html">
-      <img tabindex="0" class="image-max" src="img/stained-glass.jpg" alt="Stained Glass">
-      <p tabindex="0">Palapala Ho‘omau Church is available for weddings and other ceremonies. Please download our wedding information:
-        <a href="pdf/Palapala-Hoomau-Wedding-Guidelines.pdf" download="pdf/Palapala-Hoomau-Wedding-Guidelines.pdf">here</a>.
-      </p>
-      <footer>
-        <span tabindex="0">Ho‘olaule‘a</span>
-        <span tabindex="0">Come, celebrate</span>
-      </footer>
-  </script>
-
-  <script id="visit" type="text/html">
-
-    <img tabindex="0" class="image-max" src="img/phps-interior.jpg" alt="PHPS Interior">
-    <p tabindex="0">Visitors are asked to arrive with reverence for our church and ohana at their eternal rest.</p>
-
-    <p tabindex="0">If the church is open, please walk lightly and do not disturb the furniture and objects there. A few of the graves are barely marked, lease take care not to step on them or any grave. Please also take great care near cliff overlooking the ocean, and do not approach the edge.</p>
-
-    <p tabindex="0">These tour companies offer guided visits to the church and grounds</p>
-
-    <ul tabindex="0" role="list">
-      <li>Company 1</li>
-      <li>Company 2</li>
-      <li>Company 3</li>
-    </ul>
-
-    <p tabindex="0">If you are traveling on your own, you will find Palapala Ho‘omau Church “eight miles south of Hana just past the 41 mile marker. Turn left at the signs for the church and for Maui Stables. If coming from Kaupo and the south side of the island, look for the signs just past the Laulima Farms stand. Turn onto the unpaved road on the makai (ocean) side of the road beside the pasture. Follow it to the fork and turn left. There is a small parking area at the end of the drive.</p>
-
-    <a href="https://www.google.com/maps/place/Palapala+Ho%E2%80%98omau+Congregational+Church/@20.6513929,-156.0574674,822m/data=!3m1!1e3!4m2!3m1!1s0x7954bab0b4fb8093:0x73e083f8911b6283!6m1!1e1" target="blank" class="directions">
-      <p class="address">
-        <span>Palapala Ho‘omau Congregational Church, </span>
-        <span>Hana, HI 96713 </span>
-      </p>
-      <img src="img/google-earth.jpg" class="map">
-
-    </a>
-
-    <p>Check in on <a href="https://www.facebook.com/palapalahoomauchurch/" target="_blank">Facebook</a>, share your photos and tell us about your visit to Palapala Ho’omau Church.</p>
-
-
-    <footer>
-      <span tabindex="0">E Komo Mai</span>
-      <span tabindex="0">We welcome you to our serene sanctuary.</span>
-    </footer>
-  </script>
-
-  <script id="donations" type="text/html">
-    <img tabindex="0" src="img/donate-sign.jpg" alt="Donation Sign">
-      <p tabindex="0">For 150 years, Palapala Ho’omau Church has provided a sanctuary where residents and visitors may be in solitary peace or gather in grace.</p>
-
-      <p tabindex="0">To continue its role in the life of the Kipahulu community and beyond as a place of worship, burials, celebrations, music, and meetings, Palapala Ho’omau requires preservation and maintenance. Donations are accepted to build the endowment to maintain the grounds and graves.</p>
-
-      <p tabindex="0">Your tax-deductible donation may also be sent to:</p>
-
-      <p tabindex="0" class="address">
-        <span>The Palapala Ho’omau Preservation Society</span>
-        <span>c/o C. Peters Belsom, Esq.</span>
-        <span>547 Wainee Street</span>
-        <span>Lahaina, Hawaii 96761</span>
-        <br />
-        <span><a href="mailto:info@palapalahoomau.org">info@palapalahoomau.org</a></span>
-      </p>
-
-      <p tabindex="0">Established in 2012, the <strong>Palapala Ho‘omau Preservation Society</strong>, is a registered 501(c)3 non-profit organization based in the State of Hawaii.</p>
-
-      <p tabindex="0">Mahalo for your kokua</p>
-
-      <p tabindex="0"><a href="#ceremonies" value="ceremonies">Weddings</a> and other ceremonies and celebrations may be held at the church or on the grounds for a fee covering the cost of opening the church and include a donation for restoration and maintenance.</p>
-
-      <footer>
-        <span tabindex="0">Ua Mau Ke Ea O Palapala Ho’omau</span>
-        <span tabindex="0">Please donate to preserve Palapala Ho’omau</span>
-      </footer>
-  </script>
-
-  <script id="about" type="text/html">
-      <img  tabindex="0" src="img/front-of-church-cropped.jpg" alt="Front Of Church">
-
-      <h2 tabindex="0">Palapala Ho’omau Congregational Church </h2>
-
-      <p tabindex="0">A Brief History</p>
-
-      <p tabindex="0">In 1786, French Naval officer and explorer Jean-Francois de la Perouse sailed along the southeast coast of Maui, searching for a place to drop anchor. Passing Kipahulu, he wrote: <a href="#about" class="continue-reading" tabindex="0">Continue Reading</a></p>
-
-      <h2 tabindex="0">Palapala Ho’omau Preservation Society</h2>
-
-      <p tabindex="0">The mission of the Palapala Ho’omau Preservation Society is to return the church to a vital role in the life of the local community, to preserve the building and maintain the grounds, and to welcome visitors who value its heritage, privacy, and tranquility.</p>
-      <h2 tabindex="0">Contact Us</h2>
-
-      <p tabindex="0" class="address">
-        <span>The Palapala Ho’omau Preservation Society</span>
-        <span>c/o C. Peters Belsom, Esq.</span>
-        <span>547 Wainee Street</span>
-        <span>Lahaina, Hawaii 96761</span>
-        <br />
-        <span><a href="mailto:info@palapalahoomau.org">info@palapalahoomau.org</a></span>
-      </p>
-  </script>
-
-  <script id="not-found" type="text/html">
-    <div class="page-header">
-      <h1>404</h1>
-    </div>
-    <div class="row">
-      <div class="span14">
-        <p>
-          looks like you are lost... <a href="#home">Home</a>
-        </p>
-      </div>
-    </div>
-  </script>
-
+  <script type="text/javascript" src="js/Backbone.View.js"></script>
+  <script type="text/javascript" src="js/templateManager.js"></script>
+  <script type="text/javascript" src="js/ContentPaneView.js"></script>
+  <script type="text/javascript" src="js/ApplicationRouter.js"></script>
+  <script type="text/javascript" src="js/functions.js"></script>
   <script type="text/javascript">
     var router = new ApplicationRouter($('#content'));
     Backbone.history.start();

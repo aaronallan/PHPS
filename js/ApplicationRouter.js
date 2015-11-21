@@ -2,14 +2,12 @@ var ApplicationRouter = Backbone.Router.extend({
 
 	initialize: function(el) {
 		this.el = el;
-
-
-		this.homeView = new ContentPaneView({template: '#home'});
-		this.ceremoniesView = new ContentPaneView({template: '#ceremonies'});
-		this.visitView = new ContentPaneView({template: '#visit'});
-		this.donationsView = new ContentPaneView({template: '#donations'});
-		this.aboutView = new ContentPaneView({template: '#about'});
-		this.notFoundView = new ContentPaneView({template: '#not-found'});
+		this.homeView = new ContentPaneView({template: 'home'});
+		this.ceremoniesView = new ContentPaneView({template: 'ceremonies'});
+		this.visitView = new ContentPaneView({template: 'visit'});
+		this.donationsView = new ContentPaneView({template: 'donations'});
+		this.aboutView = new ContentPaneView({template: 'about'});
+		this.notFoundView = new ContentPaneView({template: 'not-found'});
 	},
 
 	routes: {

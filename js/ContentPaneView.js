@@ -6,10 +6,12 @@ var ContentPaneView = Backbone.View.extend({
 
 	el: "div.scrollable-content",
 
-	render: function() {
-		var content = $(this.template).html();
-		console.log(this.el);
-		$(this.el).html(content);
+	render: function(options){
+		var that = this;
+		TemplateManager.get(this.template, function(template){
+	      var html = $(template);
+	      that.$el.html(html);
+	    });
 		return this;
 	}
 });
