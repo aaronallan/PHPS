@@ -25,7 +25,7 @@ var ContentPaneView = Backbone.View.extend({
 					$('.about-photo').fadeIn(300);
 				}
 			  	that.imgLoaded = true;
-			 }, 1000)
+			 }, 500)
 			});
 		}
 	},
