@@ -17,6 +17,5 @@ TemplateManager = {
       });
 
     }
-
   }
 }
