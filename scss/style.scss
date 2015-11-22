@@ -411,7 +411,10 @@ nav.desktop-menu {
 .show {
   display: block;
   position: absolute;
-  top: 54px;
+  top: 42px;
+  @media (all and min-width: 640px) {
+    top: 54px;
+  }
   left: 0;
   bottom: 0;
   right: 0;
@@ -427,16 +430,19 @@ nav.desktop-menu {
 .history-modal {
   display: none;
 
+
   h2 {
     color: #4b938f;
     margin-bottom: .5em;
     display: inline-block;
+  }
 
-    &.history-close {
-      float: right;
-      color: #4b938f;
-      cursor: pointer;
-    }
+  .close {
+    position: absolute;
+    right: .75em;
+    top: -0.5em;
+    color: #4b938f;
+    font-size: 2em;
   }
 
   hr {
@@ -480,7 +486,7 @@ nav.desktop-menu {
     height: 100%;
 
     &:before {
-      content: 'Close';
+      content: '';
       color: #4b938f;
       font-size: 1.2em;
       text-align: center;
