@@ -140,7 +140,8 @@ footer {
   .header-left h1,
   .header-right h1 {
     color: #fff;
-    font-size: .8em; }
+    font-size: .8em;
+    white-space: nowrap; }
     @media (min-width: 400px) {
       .header-left h1,
       .header-right h1 {
