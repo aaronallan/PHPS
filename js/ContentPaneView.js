@@ -6,12 +6,37 @@ var ContentPaneView = Backbone.View.extend({
 
 	el: "div.scrollable-content",
 
+	imgLoaded: false,
+
+	renderImage: function () {
+		var that = this;
+		if (that.imgLoaded === false) {
+			$('img').hide();
+
+			if(that.template === 'about') {
+				$('.about-photo').hide();
+			}
+
+			$('img').on('load', function(){
+			 setTimeout(function () {
+			 	$('.loading-cog').hide();
+			  	$('img').fadeIn(300);
+			  	if(that.template === 'about') {
+					$('.about-photo').fadeIn(300);
+				}
+			  	that.imgLoaded = true;
+			 }, 1000)
+			});
+		}
+	},
+
 	render: function(options){
 		var that = this;
 
 		TemplateManager.get(this.template, function(template){
 	      	var html = $(template);
 	      	that.$el.html(html);
+	      	that.renderImage();
 
 	      	if (that.template === 'home') {
 				$('.fa-map-pin a').on('click', function () {
@@ -24,7 +49,7 @@ var ContentPaneView = Backbone.View.extend({
 					$('.history-modal').addClass('show');
 				});
 
-				for (var i = 1; i <= 5; i++) {
+				for (var i = 2; i <= 6; i++) {
 					$('.secondary').hide();
 	        		$('.secondary').delay(2000 * i).fadeIn(500).delay(2000 * i).fadeOut(500);
 				};
