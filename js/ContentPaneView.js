@@ -18,14 +18,12 @@ var ContentPaneView = Backbone.View.extend({
 			}
 
 			$('img').on('load', function(){
-			 setTimeout(function () {
 			 	$('.loading-cog').hide();
 			  	$('img').fadeIn(300);
 			  	if(that.template === 'about') {
 					$('.about-photo').fadeIn(300);
 				}
 			  	that.imgLoaded = true;
-			 }, 500)
 			});
 		}
 	},
