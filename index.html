@@ -1,7 +1,7 @@
 <html>
 <head>
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1">
 
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
@@ -29,7 +29,7 @@
       <h1 tabindex="0">Palapala Ho'omau<br> Congregational Church</h1>
     </div>
 		<div class="header-right">
-      <h1 tabindex="0">Kipahulu, Maui<br> Establishd 1864</h1>
+      <h1 tabindex="0">Kipahulu, Maui<br> Established 1864</h1>
     </div>
 	</header>
 	<div class="wrapper">
@@ -93,7 +93,7 @@
 
           <p tabindex="0">In 1976, Sam moved with his wife Mary Tay from Connecticut to live year-round in Kipahulu, drawing their many children, grandchildren, and friends to their distant home in paradise. Through their years on Maui, Sam and Mary Tay kept gibbon apes as pets. Sam with a baby ape in diapers on his shoulder became a familiar sight around Hana, from the bar at the Hotel Hana-Maui to the beach chairs at Hamoa. Whenever one of the gibbons passed on, it was buried with a small headstone behind Palapala Ho’omau. Among the Pryors’ friends was aviator and environmentalist Charles Lindbergh. After visiting them in the early 60s, he wrote Sam, “I have never seen a more beautiful place than where you are on Maui. Is there any land around for sale?” Sam arranged for five acres on the corner of his property to be deeded to Lindbergh, where he and his wife Anne Morrow Lindbergh built a cottage and stayed as often as they could.</p>
 
-          <p tabindex="0">Dedicated in his later years to preserving natural spaces, Lindbergh worked with Sam and philanthropist Laurence Rockefeller to protect O’heo Gulch, also known as Seven Pools, along with the rich biodiversity of the native Hawaiian rainforest of upper Kipahulu Valley. Through their efforts, the area became the Kipahulu District of the Haleakala National Park in 1969.  Not long after settling in Kipahulu, Lindbergh asked Sam where he planned to be buried. Sam took him to Palapala Ho’omau. They agreed that the Pryors and the Lindberghs would share this site for their final resting place, along with the local families of the community.</p>
+          <p tabindex="0">Dedicated in his later years to preserving natural spaces, Lindbergh worked with Sam and philanthropist Laurence Rockefeller to protect Ohe'o Gulch, also known as Seven Pools, along with the rich biodiversity of the native Hawaiian rainforest of upper Kipahulu Valley. Through their efforts, the area became the Kipahulu District of the Haleakala National Park in 1969.  Not long after settling in Kipahulu, Lindbergh asked Sam where he planned to be buried. Sam took him to Palapala Ho’omau. They agreed that the Pryors and the Lindberghs would share this site for their final resting place, along with the local families of the community.</p>
 
           <p tabindex="0">In the summer of 1974, Lindbergh fell ill at his home in Connecticut. Knowing that his time was short, he requested that he be flown to Maui. Although his doctors warned him that the strain of the long flight might speed his death, he said, “I would rather spend one day on Maui than 30 days in the hospital.” Lindbergh arrived on Maui and, after planning the details of his funeral service, died eight days later, and was buried at Palapala Ho’omau. Mary Tay Pryor passed on Maui in 1978, and was buried there under a Plumeria tree, and in 1985, Sam was put to rest beside her. For many years, a small endowment set up by the Lindbergh and Pryor families and administered by the Hawai’i Conference Foundation, the property management arm of the Congregational Church in Hawaii, provided funds for upkeep of the property. In 2012, the Palapala Ho’omau Preservation Society was created to care for the church and represent the Pryor and Lindbergh families as well as Kipahulu residents in guiding the life of the church in the community. </p>
 
@@ -107,15 +107,9 @@
       </div>
     </div>
   </div>
-  <script src="node_modules/jquery/dist/jquery.min.js"></script>
-  <script src="node_modules/underscore/underscore-min.js"></script>
-  <script src="node_modules/backbone/backbone-min.js"></script>
+  <script src="js/build/libs-production.js"></script>
+  <script type="text/javascript" src="js/build/production.js"></script>
 
-  <script type="text/javascript" src="js/Backbone.View.js"></script>
-  <script type="text/javascript" src="js/templateManager.js"></script>
-  <script type="text/javascript" src="js/ContentPaneView.js"></script>
-  <script type="text/javascript" src="js/ApplicationRouter.js"></script>
-  <script type="text/javascript" src="js/functions.js"></script>
   <script type="text/javascript">
     var router = new ApplicationRouter($('#content'));
     Backbone.history.start();
